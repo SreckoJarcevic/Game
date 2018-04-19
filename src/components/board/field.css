@@ -1,0 +1,20 @@
+.field {
+	border: 1px solid black;
+	transition-duration: 0.6s;
+}
+
+.field--empty {
+	background-color: #8a0000;
+}
+
+.field--clicked {
+	background-color: #666;
+}
+
+.field--clickable {
+	background-color: black;
+}
+
+.field--nextClickable {
+	background-color: white;
+}
