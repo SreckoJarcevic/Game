@@ -1,5 +1,3 @@
-import generateLevelPicker from '../utils/statsFunctions';
-
 const userMaxLevel = JSON.parse(localStorage.getItem('level'));
 const userLives = JSON.parse(localStorage.getItem('lives'));
 
