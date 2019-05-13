@@ -30,7 +30,6 @@ import generateAndMarkFields from '../components/board/updateFunctions/generateA
 import levelComplete from '../components/board/updateFunctions/levelComplete';
 
 class Board extends Component {
-
 	componentWillReceiveProps(nextProps) {
 		noMoreValidMoves(nextProps.board.fields, this.props);
 	}

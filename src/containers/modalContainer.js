@@ -1,24 +1,23 @@
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
 // Actions
-import { setModal } from '../actions/modalActions';
-import { levelUp, backToLevel1 } from '../actions/statsActions.js';
+import { setModal } from "../actions/modalActions";
+import { levelUp, backToLevel1 } from "../actions/statsActions.js";
 
 // Components
-import Modal from '../components/modal/modal';
+import Modal from "../components/modal/modal";
 
 // To remove ???
 const mapStateToProps = state => {
-	return state.modal;
+  return state.modal;
 };
- 
-const mapDispatchToProps = (dispatch) => ({
-	setModal: config => dispatch(setModal(config)),
-	onConfirm: () => dispatch(levelUp()),
-	onCancel: () => dispatch(backToLevel1())
+const mapDispatchToProps = dispatch => ({
+  setModal: config => dispatch(setModal(config)),
+  onConfirm: () => dispatch(levelUp()),
+  onCancel: () => dispatch(backToLevel1())
 });
 
 export default connect(
-	mapStateToProps,
-	mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Modal);
